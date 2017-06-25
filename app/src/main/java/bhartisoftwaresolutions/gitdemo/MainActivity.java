@@ -2,8 +2,13 @@ package bhartisoftwaresolutions.gitdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    public void showToast(View view){
+        Toast.makeText(this, "Hello world", Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
